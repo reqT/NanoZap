@@ -14,24 +14,6 @@
 package reqT 
 /**
   * reqT.NanoZap -- A minimalistic DSL for testing.
-  *
-  * ==Example usage==
-  {{{
-   object myTestCases extends NanoZap {
-    def zap: Boolean = test("Arithmetic basics") { 
-      "basic addition" .
-          test { 1 + 1 == 3 } +
-      "associativity of multiplication" .
-          test { 2 * 3 == 3 * 2 } 
-     }
-   }
-  }}}  
-  {{{
-    scala> myTestCases.zap
-    NanoZap test(Arithmetic basics) ... ZAPPED!
-    *** TEST FAILED: basic addition
-    res0: Boolean = false
-  }}}
   */
   
 trait NanoZap {
