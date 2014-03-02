@@ -8,7 +8,7 @@ Example usage
 
 String is pimped with a test method that can be used to accumulate non-empty strings. NanoZap gets loud when a non-empty string is detected.
 
-    
+'''scala    
    object myTestCases extends reqT.NanoZap {
     def zap: Boolean = test("Arithmetic basics") { 
       "basic addition" .
@@ -17,3 +17,4 @@ String is pimped with a test method that can be used to accumulate non-empty str
           test { 2 * 3 == 3 * 2 } 
      }
    }
+'''
